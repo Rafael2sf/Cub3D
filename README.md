@@ -1,23 +1,30 @@
 # Cub3D
-Creation of a "realistic" 3D maze using a 2D map and Raycasting.
+-- @ 42 lisbon
+✅ Finished  
 
-### How to use it (WSL 2 required):
+## 💻 Compatibility
+unix ( except MacOS )  
+Minilibx (linux binary) (already in git)
 
-First of all, you will need to install XMing. You can do so by following the next few steps (taken from https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html#getting-a-screen-on-windows-10-wsl2):
+## 📝 Description
+This project is inspired by the world-famous Wolfenstein 3D game, which
+was the first FPS ever. It will enable you to explore ray-casting. Your goal will be to
+make a dynamic view inside a maze, in which you’ll have to find your way.
 
-Install [XMing](https://sourceforge.net/projects/xming/), just keep clicking next, the defaults will do. After installing, you will see a little XMing icon in your icon tray. Now exit XMing, and open XLaunch, proceed with the following steps:
-* Click Multiple windows and go to the next page;
-* Click Start no client and go to the next page;
-* Make sure that the No Access Control box is ticked and go to the next page;
-* Click Save configuration and then Finish.
+## ℹ️ Usage
 
-After XLaunch is up and runnig, run the following commands in your terminal:
+~~~git
+git clone https://github.com/Rafael2sf/Cub3D.git cub3d
+~~~
 
-```
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
-```
-followed by:
-```
+and `cd cub3d`
+
+## 🔨 Build
+
+~~~shell
 make
-```
-then run **./Cub3D**.
+~~~
+
+~~~shell
+./Cub3D <map>
+~~~
